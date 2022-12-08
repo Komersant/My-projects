@@ -1,0 +1,46 @@
+.grid {
+  margin: 10px 0px 0px 0px;
+
+  .h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    .gridItem {
+      color: rgba(255, 255, 255, 0.9);
+      background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+      background-size: 600%;
+      animation: anime 16s linear infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 calc((100 / 4) * 100%);
+      padding: 15px;
+      border-radius: 0px 20px 0px 20px;
+      transition: all 0.3s ease 0s;
+      @media (max-width: 768px) {
+        flex: 0 1 48%;
+      }
+      @media (max-width: 468px) {
+        flex: 0 1 100%;
+      }
+
+      &:hover {
+        border-radius: 20px 0px 20px 0px;
+        background: linear-gradient(-45deg, #FF3D77, #338AFF, #3CF0C5);
+      }
+    }
+  }
+}

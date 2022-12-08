@@ -1,0 +1,23 @@
+.me {
+  background-color: #282828;
+  max-height: 300px;
+  position: relative;
+  text-align: center;
+
+  .imgWrapper {
+    min-height: 100px;
+    margin: 0px 0px 10px 0px;
+
+    .img {
+      margin: -40px 0px 0px 0px;
+      border-radius: 50%;
+    }
+  }
+
+  .heading {
+    span {
+      color: white;
+      font-size: 24px;
+    }
+  }
+}

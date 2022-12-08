@@ -1,11 +1,11 @@
 import axios from "axios";
-import {TEST_URL} from "../src/constants";
+import {API_URL} from "../src/constants";
 import Home from "../src/components/screens/home/Home";
 
 export const getStaticProps = async () => {
-	const {data: links} = await axios.get(`${TEST_URL}/links`);
-	const {data: me} = await axios.get(`${TEST_URL}/me`);
-	const {data: socials} = await axios.get(`${TEST_URL}/socials`);
+	const {data: links} = await axios.get(`${API_URL}/links`);
+	const {data: me} = await axios.get(`${API_URL}/me`);
+	const {data: socials} = await axios.get(`${API_URL}/socials`);
 	
 	return {
 		props: {

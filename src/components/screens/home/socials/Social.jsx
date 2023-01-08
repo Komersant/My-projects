@@ -5,7 +5,7 @@ import {APP_URL} from "../../../../constants";
 const Social = ({item}) => {
 	return (
 		<a href={item.link} rel='noreferrer' target="_blank" className={styles.socialItem}>
-			<Image className={styles.img} src={`${APP_URL}${item.icon}`} width={30} height={30} alt="img"/>
+			<Image className={styles.img} src={`${APP_URL}${item.icon}`} width={31} height={31} alt="img"/>
 			<div className={styles.title}>{item.title}</div>
 		</a>
 	);
